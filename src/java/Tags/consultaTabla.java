@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
+import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspTagException;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.TagSupport;
@@ -23,13 +24,25 @@ public class consultaTabla extends TagSupport {
     
     private AccesoJDBC jdbc;
     
-    public int doStartTag() throws JspTagException
+    /**
+     *
+     * @return
+     * @throws JspException
+     */
+    @Override
+    public int doStartTag() throws JspException
     {
         jdbc = new AccesoJDBC();
         return SKIP_BODY;
     }
 
-    public int doEndTag() throws JspTagException
+    /**
+     *
+     * @return
+     * @throws JspException
+     */
+    @Override
+    public int doEndTag() throws JspException
     {
         try {
             ResultSet rs = this.jdbc.getEmpleados();
