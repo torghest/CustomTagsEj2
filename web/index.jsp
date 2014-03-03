@@ -12,5 +12,6 @@
     <body>
         <h2 align="center">Tabla de Empleados con CUSTOM TAGS</h2>
         <Scb:TablaEmpleados/>
+        <h2 align="center"><Scb:PruebaVarStatic/></h2>
     </body>
 </html>
