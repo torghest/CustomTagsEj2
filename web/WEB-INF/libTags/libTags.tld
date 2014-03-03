@@ -11,4 +11,9 @@
 		<tagclass>Tags.consultaTabla</tagclass>
                 	<bodycontent>empty</bodycontent>
 	</tag>
+        <tag>
+		<name>PruebaVarStatic</name>
+		<tagclass>Tags.pruebaStatic</tagclass>
+                	<bodycontent>empty</bodycontent>
+	</tag>
 </taglib>
